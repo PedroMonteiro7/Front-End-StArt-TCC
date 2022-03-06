@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* background-color: tomato; */
+}
+
+.formulario-login {
+    /* background-color: turquoise; */
+    width: 50%;
+    height: 100%;
+}
+
+.img-login {
+    background-image: url(./img-login.png);
+    /* background-size: contain; */
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /* clip: rect(0px, 0px, 0px, 0px); */
+    width: 50%;
+    height: 100vh;
+}
+
+input {
+    display: block;
+}
