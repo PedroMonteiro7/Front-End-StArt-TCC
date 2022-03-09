@@ -9,26 +9,121 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    /* background-color: tomato; */
+    font-family: 'Raleway', sans-serif;
 }
 
-.formulario-login {
-    /* background-color: turquoise; */
+.conteiner-formulario-login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.conteudo-formulario-login {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 10%;
+}
+
+#conteiner2 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-style: normal;
+    font-size: clamp(2em, 1em + 3vw, 3em);
+}
+
+.conteiner-txt-cadastrar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.p-colorido {
+    color: #40E0D0;
+    font-weight: 600;
+}
+
+.p-colorido:hover {
+    cursor: pointer;
+}
+
+label {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+#label-senha {
+    height: 70%;
+}
+
+input {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0% 5%;
+    display: block;
+}
+
+input:focus-within {
+    border: 1px solid #40E0D0;
+    box-shadow: 0 0 0 0; /* retira a borda padrão do input ao clicar */
+    outline: 0;
+}
+
+button {
+    width: 50%;
+    height: 5%;
+    border-radius: 10px;
+    background-color: #40E0D0;
+    border: 1px solid black;
+    font-size: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+
+.img-login {
     width: 50%;
     height: 100%;
 }
 
-.img-login {
-    background-image: url(./img-login.png);
-    /* background-size: contain; */
-    background-position: center;
+.img-login img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    background-repeat: no-repeat;
-    /* clip: rect(0px, 0px, 0px, 0px); */
-    width: 50%;
-    height: 100vh;
 }
 
-input {
-    display: block;
+
+@media (max-width: 1350px) {
+    input {
+        width: 70%;
+    } 
+    button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteiner-txt-cadastrar {
+        flex-direction: column;
+    }
 }

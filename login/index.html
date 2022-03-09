@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>StArt</title>
 </head>
 <body>
-    <section class="formulario-login">
-        <h1>Login</h1>
+    <section class="conteiner-formulario-login">
+        <div class="conteudo-formulario-login">
+        
+        <div id="conteiner1">
+            <h1>Login</h1>
 
-        <div class="conteiner-txt-cadastrar">
-            <p>Não possui uma conta?</p>
-            <p>Cadastre-se</p>
+            <div class="conteiner-txt-cadastrar">
+                <p id="nao-possui-conta">Não possui uma conta?</p>
+                <p class="p-colorido">Cadastre-se</p>
+            </div>
         </div>
 
         <label>E-mail
             <input type="text">
         </label>
-        <label>Senha
-            <input type="password">
-        </label>
 
-        <p>Esqueceu sua senha?</p>
+        <div id="conteiner2">
+            <label id="label-senha">Senha
+                <input id="input-senha" type="password">
+            </label>
+    
+            <p class="p-colorido">Esqueceu sua senha?</p>
+        </div>
 
         <button>Entrar</button>
+        </div> 
     </section>
 
     <section class="img-login">
-        <!-- <img src="img-login.png" alt=""> -->
+        <img src="./img-login.jpg" alt="">
     </section>
 </body>
 </html>
